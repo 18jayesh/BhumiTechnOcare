@@ -1,0 +1,433 @@
+
+.navbar .nav-link.active {
+  color: #25D366 !important;
+  font-weight: 600;
+  border-bottom: 2px solid #25D366;
+}
+
+/* FULL SCREEN SLIDER */
+.slider-img {
+    height: 100vh;
+    object-fit: cover;
+}
+
+.custom-caption {
+    bottom: 30%;
+    background: rgba(0,0,0,0.6);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Smooth Fade */
+.carousel-fade .carousel-item {
+    transition: opacity 1s ease-in-out;
+}
+
+
+.call-cta-section {
+  background: linear-gradient(135deg, #198754, #0d6efd);
+  padding: 70px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle Animated Glow Circles */
+.call-cta-section::before,
+.call-cta-section::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  animation: float 6s infinite ease-in-out;
+}
+
+.call-cta-section::before {
+  width: 300px;
+  height: 300px;
+  top: -100px;
+  left: -100px;
+}
+
+.call-cta-section::after {
+  width: 250px;
+  height: 250px;
+  bottom: -100px;
+  right: -100px;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(20px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Button Hover Effect */
+.call-cta-section .btn {
+  transition: 0.3s ease;
+}
+
+.call-cta-section .btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: linear-gradient(45deg, #25D366, #128C7E);
+  color: white;
+  font-size: 32px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 15px rgba(37,211,102,0.6);
+  z-index: 999;
+  animation: bounce 2s infinite;
+  transition: 0.3s;
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #25D366;
+  color: white;
+  font-size: 30px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* Ripple Effect */
+.whatsapp-float::before,
+.whatsapp-float::after {
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: rgba(37, 211, 102, 0.5);
+  z-index: -1;
+  animation: ripple 2s infinite;
+}
+
+.whatsapp-float::after {
+  animation-delay: 1s;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+/* Hover effect */
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+
+
+
+.about-banner {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('images/com_repair.jpeg') center/cover no-repeat;
+  height: 60vh;
+}
+.map-container {
+  width: 100%;
+  height: 400px;
+  border-radius: 20px;
+  transition: 0.4s ease;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Hover Zoom Effect */
+.map-container:hover {
+  transform: scale(1.02);
+}
+
+
+
+.cta-section {
+  background: linear-gradient(135deg, #0d6efd, #198754);
+  padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle Background Glow */
+.cta-section::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 50%;
+  top: -80px;
+  right: -80px;
+}
+
+.cta-section::after {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 50%;
+  bottom: -80px;
+  left: -80px;
+}
+
+/* Button Hover Effect */
+.cta-section .btn {
+  transition: 0.3s ease;
+}
+
+.cta-section .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+ /* service section start here  */
+
+ .service-banner {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('images/service_banner.png') center/cover no-repeat;
+  height: 60vh;
+}
+
+/* Service Card Styling */
+.service-card {
+  transition: 0.3s ease;
+  background: #fff;
+}
+.service-card .icon i {
+  font-size: 45px;
+  color: black;
+  transition: 0.3s;
+}
+
+.service-card:hover .icon i {
+  color: skyblue;
+  transform: scale(1.1);
+}
+
+/* ===== SERVICE CTA ===== */
+.service-cta {
+  background: linear-gradient(135deg, #111111, #0d6efd);
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background glow effect */
+.service-cta::before {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 50%;
+  top: -120px;
+  right: -120px;
+}
+
+.service-cta h2 {
+  font-size: 32px;
+}
+
+.service-cta .btn {
+  transition: 0.3s ease;
+  padding: 12px 28px;
+}
+
+.service-cta .btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+}
+.clients-section h2 {
+  font-size: 32px;
+}
+
+.client-logo-box {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 18px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.client-logo-box img {
+  max-height: 60px;
+  max-width: 100%;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: 0.3s ease;
+}
+
+.client-logo-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.client-logo-box:hover img {
+  filter: grayscale(0%);
+}
+
+
+/* Product List  */
+
+/* ===== PRODUCT BANNER ===== */
+.product-banner {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('images/product_baner.png') center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+/* ===== PRODUCT CARD ===== */
+.product-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Image container fixed height */
+.product-img {
+  height: 220px;
+  overflow: hidden;
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-img img {
+  max-height: 100%;
+  width: auto;
+  max-width: 100%;
+  transition: transform 0.4s ease;
+}
+
+/* Content */
+.product-content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-content h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.product-content p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Hover Effect */
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+}
+
+.product-card:hover .product-img img {
+  transform: scale(1.05);
+}
+
+/* product about section start here  */
+/* ===== PRODUCT CTA SECTION ===== */
+.product-cta {
+  background: linear-gradient(135deg, #0d6efd, #198754);
+  padding: 70px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Soft background glow circles */
+.product-cta::before,
+.product-cta::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+}
+
+.product-cta::before {
+  width: 300px;
+  height: 300px;
+  top: -100px;
+  left: -100px;
+}
+
+.product-cta::after {
+  width: 250px;
+  height: 250px;
+  bottom: -100px;
+  right: -100px;
+}
+
+/* Button Hover */
+.product-cta .btn {
+  transition: 0.3s ease;
+}
+
+.product-cta .btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* contact us section start here  */
+.contact-banner {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('images/contact-banner.png') center/cover no-repeat;
+  height: 50vh;
+}
+
+.contact-form {
+  background: #ffffff;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border-radius: 10px;
+}
+
+.map-section iframe {
+  filter: grayscale(20%);
+}
